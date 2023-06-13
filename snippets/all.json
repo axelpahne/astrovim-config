@@ -61,11 +61,7 @@
   },
   "Mui styled w/o theme": {
     "prefix": "ss",
-    "body": [
-      "const ${1:${TM_FILENAME_BASE}}${2:Root} = styled(${3:'div'})({",
-      "  ${4}",
-      "})"
-    ]
+    "body": ["const ${1:${TM_FILENAME_BASE}}${2:Root} = styled(${3:'div'})({", "  ${4}", "})"]
   },
   "Mui styled w/ theme": {
     "prefix": "sss",
@@ -81,34 +77,19 @@
   },
   "React useCallback": {
     "prefix": "ruc",
-    "body": [
-      "const $1 = React.useCallback(($2) => {",
-      "  $4",
-      "}, [$3])"
-    ]
+    "body": ["const $1 = React.useCallback(($2) => {", "  $4", "}, [$3])"]
   },
   "React useEffect": {
     "prefix": "rue",
-    "body": [
-      "React.useEffect(() => {",
-      "  $2",
-      "}, [$1])"
-    ]
+    "body": ["React.useEffect(() => {", "  $2", "}, [$1])"]
   },
   "React useMemo": {
     "prefix": "rum",
-    "body": [
-      "const $1 = React.useMemo(",
-      "  () => ({ $2 }),",
-      "  [$2]",
-      ")"
-    ]
+    "body": ["const $1 = React.useMemo(", "  () => ({ $2 }),", "  [$2]", ")"]
   },
   "React useRef": {
     "prefix": "rur",
-    "body": [
-      "const $1Ref = React.useRef(${2:null})"
-    ]
+    "body": ["const $1Ref = React.useRef(${2:null})"]
   },
   "React useState": {
     "prefix": "rus",
@@ -144,6 +125,27 @@
       "}",
       "",
       "export const Default = {",
+      "  args: {",
+      "    children: 'Just some children',",
+      "  },",
+      "}",
+      ""
+    ]
+  },
+  "Storybook Component Story Format 3 TS": {
+    "prefix": "csf3t",
+    "body": [
+      "import type { Meta, StoryObj } from '@storybook/react'",
+      "import ${1:MyComponent} from './${1:MyComponent}'",
+      "",
+      "const meta: Meta<typeof ${1:MyComponent}> = {",
+      "  component: ${1:MyComponent},",
+      "}",
+      "",
+      "export default meta",
+      "type Story = StoryObj<typeof ${1:MyComponent}>",
+      "",
+      "export const Default: Story = {",
       "  args: {",
       "    children: 'Just some children',",
       "  },",
