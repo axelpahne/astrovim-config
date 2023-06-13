@@ -7,7 +7,6 @@ return {
       "javascript",
       "json",
       "lua",
-      "lua",
       "tsx",
       "typescript",
     },
