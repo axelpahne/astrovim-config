@@ -32,6 +32,15 @@ return {
         hide_gitignored = true,
       }
       opts.filesystem.follow_current_file = false
+      opts.window.width = 40
+
+      -- Disable "buffers" and "git_status" sources due to tab order bug
+      -- opts.sources = {
+      --   "filesystem",
+      --   -- "buffers",
+      --   -- "git_status",
+      --   -- "document_symbols",
+      -- }
       return opts
     end,
   },
@@ -45,7 +54,7 @@ return {
 
       -- This will expand the current item or jump to the next item within the snippet.
       local luasnip = require "luasnip"
-      vim.keymap.set({ "i", "s" }, "<C-s>", function()
+      vim.keymap.set({ "i", "s" }, "<C-e>", function()
         if luasnip.expand_or_jumpable() then luasnip.expand_or_jump() end
       end, { silent = true })
     end,
