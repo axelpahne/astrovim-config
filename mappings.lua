@@ -24,8 +24,8 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     -- keep cursor centered
-    ["<C-d>"] = { "<C-d>zz", desc = "Scroll down and center cursor" },
-    ["<C-u>"] = { "<C-u>zz", desc = "Scroll down and center cursor" },
+    -- ["<C-d>"] = { "<C-d>zz", desc = "Scroll down and center cursor" },
+    -- ["<C-u>"] = { "<C-u>zz", desc = "Scroll down and center cursor" },
     -- navigate buffers
     ["<S-h>"] = { ":bprevious<CR>", desc = "Navigate to previous buffer" },
     ["<S-l>"] = { ":bnext<CR>", desc = "Navigate to next buffer" },
