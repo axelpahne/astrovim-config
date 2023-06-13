@@ -10,6 +10,12 @@ return {
   -- autocompletion
   { import = "astrocommunity.completion.copilot-lua-cmp" },
 
+  -- Additional powerful text objects
+  { import = "astrocommunity.motion.mini-ai" },
+
+  -- Splitting/joining blocks of code
+  { import = "astrocommunity.editing-support.treej" },
+
   -- editor rulers
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
   {
